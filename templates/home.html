@@ -1,0 +1,135 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Holuuu <i class="em em-love_letter" aria-role="presentation" aria-label="LOVE LETTER"></i></h1>
+
+<script>
+
+var cualidades = ["1. Honesta", 
+"2. Tierna", 
+"3. Hermosa", 
+"4. Graciosa", 
+"5. Amable", 
+"6. Comprensiva", 
+"7. Tolerante",
+"8. Especial", 
+"9. Única",
+"10. Valiente",
+"11. Preciosa", 
+"12.Valiosa", 
+"13. Generosa", 
+"14. Sensible", 
+"15. Sencilla",
+"16. Activa", 
+"17. Aventurera", 
+"18. Perfecta", 
+"19. Imperfecta",
+"20. Enigmática", 
+"21. Persistente",
+"22. Linda",
+"23. Cariñosa",
+"24. Atenta",
+"25. Talentosa",
+"26. Mágica",
+"27. Maravillosa",
+"28. Majestuosa",
+"29. Bajita jsjsj",
+"30. Sonriente",
+"31. Consejera",
+"32. Bondadosa ",
+"33. Energética",
+"34. Fantástica",
+"35. Encantadora",
+"36. Consentida",
+"37. Animada ",
+"38. Inteligente",
+"39. Integra ",
+"40. Fuerte",
+"41. Artista ",
+"42. Creativa",
+"43. Emotiva ",
+"44. Apasionada",
+"45. Confidente",
+"46. Romántica",
+"47. Exitosa",
+"48. Curiosa",
+"49. Lista",
+"50. Bonita ",
+"51. Despistada ",
+"52. Interesante",
+"53. Ordenada ",
+"54. Dulce",
+"55. Genial !",
+"56. Colorida ",
+"57. Brillante",
+"58. Divertida",
+"59. Abrazable",
+"60. Inquieta",
+"61. Extrovertida",
+"62. Distraída",
+"63. Sincera",
+"64. Despreocupada",
+"65. Caprichosa ",
+"66. Impredecible",
+"67. Adorable",
+"68. Indecisa ",
+"69. Lmao",
+"70. Enamoradiza",
+"71. Inquieta ",
+"72. Cachetona ",
+"73. Verdadera ",
+"74. Estrella fugaz",
+"75. Mi sol",
+"76. Mi luna",
+"77. Mis estrellas",
+"78. Mi tiempo",
+"79. Soñadora",
+"80. Verde limón ",
+"81. Loquita :D ",
+"82. Libre",
+"83. Risueña",
+"84. Positiva",
+"85. Atenta",
+"86. Optimista",
+"87. Humilde",
+"88. Carismatica",
+"89. Entusiasta",
+"90. Tolerante",
+"91. Responsable",
+"92. Optimista",
+"93. lo mejor !",
+"94. Simplemente increible",
+"95. Mi niña bonita",
+"96. Mi mayor enigma",
+"99. Mi corazoncito uwu",
+"100. Mi papita favorita",];
+var respuestass = cualidades[Math.floor(Math.random() * cualidades.length)];
+
+  function alerta(){
+    var respuesta = confirm("Cami eres: "+respuestass);
+    if (respuesta == true)
+    {
+      document.location.reload()
+    }
+    else
+    {
+      return false;
+    }
+ 
+  }
+
+</script>
+
+<div class="jumbotron">
+    <h1 class="display-4">¿Como podria definir a Cami en una palabra? </h1>
+    <p class="lead">Es simplemente imposible, eres una persona tan llena de cualidades que definirte en una sola palabra es imposible, pero lo intentaré con 100 palabras.</p>
+    <hr class="my-4">
+    <p> Cuando presiones el boton de abajo podras leer aleatoriamente una de las cien palabras que te definen. <i class="em em-kissing_smiling_eyes" aria-role="presentation" aria-label="KISSING FACE WITH SMILING EYES"></i></p>
+    
+    <div style="text-align: center">
+      <input style="top: 250 px; left: -150 px; background-color: #6be585;" type="button" onclick="alerta()" value="Presioname >:v">
+    </div>
+  
+  </div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo de cumpleaños</title>
+    <!--BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+   
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+        <a class="navbar-brand" href="/">CAMILAAAAA :3</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto"> 
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="/">Esta es Cami</a>
+                <a class="nav-item nav-link" href="{{ url_for('about') }}">Felíz Cumpleaños</a>
+        
+            </div>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <div class="container p-4">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+
+</html>
